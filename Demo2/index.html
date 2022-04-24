@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+ 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
@@ -9,7 +9,7 @@
 <body>
 
   <div class="inputContainer">
-    <video  id="inputVideo" autoplay muted></video>
+    <video  onplay="computeFaces()" id="inputVideo" autoplay muted></video>
     <canvas id="overlay" class="overlay" />
   </div>
 
