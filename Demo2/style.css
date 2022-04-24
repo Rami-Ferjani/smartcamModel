@@ -1,0 +1,13 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.inputMaxHeight {
+  max-height: 600px;
+}
+
+.inputContainer {
+  position: relative;
+}

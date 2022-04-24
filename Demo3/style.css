@@ -1,0 +1,27 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .inputMaxWidth {
+    max-width: 640px;
+  }
+  
+  .imageInputContainer {
+    position: relative;
+  }
+  
+  .imageInputContainer {
+    position: relative;
+  }
+  
+  .videoInputContainer {
+    margin-top:30px; position: relative;
+  }
+  
+  .center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }

@@ -1,0 +1,54 @@
+<html>
+
+<body>
+
+  <div>
+    <div class="row">
+      <div class="center-block">
+        <div id="authorizedAlert" class="alert alert-success">
+          Welcome again !
+        </div>
+        <div id="unauthorizedAlert" class="alert alert-danger">
+          Unauthorized access !
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-6">
+        <div >
+          <label>Please select an image from your computer:</label>
+          <div>
+            <input id="sourceImageInput" type="file" onchange="selectSourceImage()" accept=".jpg, .jpeg, .png">
+          </div>
+        </div>
+
+        <div class="imageInputContainer">
+          <img id="sourceImage" class="inputMaxWidth" />
+          <canvas id="sourceImageOverlay" class="overlay" />
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <label>Webcam stream:</label>
+
+        <div class="videoInputContainer">
+          <video id="inputVideo" autoplay muted></video>
+          <canvas id="videoOverlay" class="overlay" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+<script src="../libs/face-api.js"></script>
+<script src="../libs/jquery-3.3.1.min.js"></script>
+<script src="script.js"></script>
+
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+
+</html>
