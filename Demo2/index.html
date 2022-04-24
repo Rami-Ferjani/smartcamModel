@@ -7,8 +7,25 @@
 </head>
 
 <body>
+  <div id="container">
+    <video autoplay="true" id="videoElement">
+    
+    </video>
+  </div>
+  <script>
+var video = document.querySelector("#videoElement");
 
-  <div class="inputContainer">
+if (navigator.mediaDevices.getUserMedia) {
+  navigator.mediaDevices.getUserMedia({ video: true })
+    .then(function (stream) {
+      video.srcObject = stream;
+    })
+    .catch(function (err0r) {
+      console.log("Something went wrong!");
+    });
+}
+  </script>
+  <!--<div class="inputContainer">
     <video  onplay="computeFaces()" id="inputVideo" ></video>
     <canvas id="overlay" class="overlay" />
   </div>
@@ -18,7 +35,7 @@
     <label id="timeLabel"></label>
     <br>
     <label id="fpsLabel"></label>
-  </div>
+  </div>-->
 
 </body>
 
