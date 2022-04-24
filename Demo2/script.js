@@ -10,7 +10,7 @@ async function init() {
   await faceapi.loadFaceExpressionModel('/')
 
   const stream = await navigator.mediaDevices.getUserMedia({ video: {} })
-  const videoElement = $('#inputVideo').get(1)
+  const videoElement = $('#inputVideo').get(10)
   videoElement.srcObject = stream
 }
 
